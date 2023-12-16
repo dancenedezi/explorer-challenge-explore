@@ -1,0 +1,131 @@
+@media (min-width: 720px) {
+  h1 {
+    font-size: 5.8rem;
+  }
+
+  header p {
+    font-size: 3.2rem;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "txt img";
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 3rem;
+  }
+
+  header p {
+    font-size: 2.8rem;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+  }
+  
+  .astronaut {
+    grid-area: img;
+  }
+  
+  .arrow {
+    margin: 8rem 0 0;
+  }
+  
+  section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+  }
+  
+  form{
+    justify-content: flex-start;
+    text-align: left;
+    background-image: url(../img/bg-form.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
+    background-size: contain;
+  }
+  
+  fieldset {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* Header */
+  
+  header {
+    padding: 0 3rem 0 12rem;
+    
+    height: 84rem;
+    
+    text-align: initial;
+  }
+  
+  h1 {
+    font-size: 5.8rem;
+    margin-top: 32rem;
+  }
+
+ header p {
+  font-size: 3.2rem;
+ }
+
+ .astronaut {
+  width: 719.36px;
+  height: 732.357px;
+  grid-area: img;
+ }
+
+ .header-text {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .arrow {
+  margin: 18rem 0 0;
+ }
+
+ /* Section */
+
+ section div {
+  width: 36.6rem;
+  height: 44.8rem;
+ }
+
+ h2 {
+  font-size: 3.6rem;
+ }
+
+ section p {
+  font-size: 2rem;
+ }
+
+ /* Form */
+
+ form {
+  padding: 9.4rem  12rem;
+  
+ }
+
+
+
+ fieldset {
+  width: 60rem;
+ }
+
+ textarea {
+  max-width: 100%;
+ }
+}

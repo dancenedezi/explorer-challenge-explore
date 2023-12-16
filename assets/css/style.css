@@ -1,0 +1,197 @@
+@import url(./reset.css);
+
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  width: 100vw;
+
+  --bg-linear-blue: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  --color-title: #B52184;
+  --color-text: #312D64;
+
+  overflow-x: hidden;
+}
+
+html, body, input, textarea, button {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+}
+
+
+
+#app {
+  width: 100%;
+  overflow-y: hidden;
+}
+
+h1, h2, legend {
+  color: var(--color-title);
+  font-weight: 900;
+}
+
+p {
+  color: var(--color-text);
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3.2rem 0 3.4rem;
+  text-align: center;
+}
+
+.astronaut {
+  width: 364px;
+  height: 370px;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin: 1.6rem 0 0.5rem;
+}
+
+header p {
+  font-size: 20px;
+}
+
+.arrow {
+  width: fit-content;
+  margin: 3.4rem 0 9.2rem;
+}
+
+
+/* section 1 */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+
+  padding: 5.2rem 3.2rem;
+  background-image: var(--bg-linear-blue);
+}
+
+section div {
+  width: 35.2rem;
+  height: 33.8rem;
+  padding: 2.6rem;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+h2 { 
+  font-size: 2.8rem;
+  margin: 3.2rem 0 2rem;
+}
+
+/* form */
+form {
+  padding: 7.8rem 3.2rem 6.6rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  width: 34.8rem;
+}
+
+legend {
+  font-size: 3.2rem;
+  margin-bottom: 4.2rem;
+}
+
+label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+input, textarea {
+  border-radius: 16px;
+  border: 1.5px solid var(--color-text);
+  width: 100%;
+  outline-color: var(--color-title);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--color-text);
+}
+
+#name, #email {
+  padding: 1.2rem 1.4rem 1.2rem 4.8rem;
+  background-image: url(../img/name.svg);
+  background-repeat: no-repeat;
+  background-position: left 1.4rem top 50%;
+}
+
+#email {
+  background-image: url(../img/email.svg);
+}
+
+textarea {
+  padding: 1.2rem;
+  height: 12.6rem;
+  padding: 1.2rem 1.4rem;
+  overflow-x: hidden;
+}
+
+button {
+  width: fit-content;
+  padding: 1.6rem;
+  border: none;
+  
+  color: #fff;
+  font-size: 1.4rem;
+
+  border-radius: 1.6rem;
+  background-image: var(--bg-linear-blue);
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--color-title);
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7.8rem;
+  background-image: var(--bg-linear-blue);
+}
+
+footer p {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+
+/* Animação */
+
+.arrow {
+  animation: move 1s forwards alternate infinite ease-in-out, blink 100ms infinite;
+}
+  
+@keyframes move {
+
+ 100% {
+      transform: translateY(50%);
+  }
+}
+
